@@ -1,17 +1,8 @@
-# -*- coding: utf-8 -*-
-
-import os
-import random
-import time
-import requests
-
 from flask import Flask, request, abort, render_template
 from flask import json, jsonify
-from flask_cors import CORS, cross_origin # for cross domain problem
 
 #app = Flask(__name__)
 app = Flask(__name__, static_url_path='', static_folder='static')
-CORS(app)
 
 
 @app.route('/')
